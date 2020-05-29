@@ -1,23 +1,13 @@
 
-import React, { Component } from 'react';
-import './App.css';
-import Parent from './parent' 
+import React from 'react';
+import Autocomplete from './Autocomplete';
 
-class App extends Component {
-
-  handleItem = (itemValue) => {
-    this.setState({item: itemValue});
-    console.log('item ::::', itemValue)
-  }
-
-  render() {
-    
+function App () {  
     return (
       <div className="App">
-        <Parent handleItem={this.handleItem}/>
+        <Autocomplete />
       </div>
     );
-  }
 }
 
 export default App;
